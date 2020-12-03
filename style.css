@@ -38,12 +38,40 @@ body{
 
 .panel h3{
     font-size: 30px;
-    margin-bottom: 0;
+    margin-bottom: 0; 
 }
+
 .panel p{
     font-size: 20px;
     margin-top: 0px;
 }
+
+.panel .text-wrapper{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    display: none;
+}
+
 .panel.active{
     flex: 5;
+}
+.panel.active .text-wrapper{
+    display: block;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px){
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4), 
+    .panel:nth-of-type(4){
+        display: none;
+    }
 }
