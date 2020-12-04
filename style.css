@@ -79,16 +79,25 @@ header{
     left: 20px;
     margin: 0;
     display: none;
-    background-image: linear-gradient(to right, rgba(165, 55, 253, 0.0), rgba(165, 55, 253, 0.9));
-    height: 20vh;
-    width: 80%;
+    padding-bottom: 20px;
     margin-bottom: -10px;
+}
+.panel .gradient{
+    background-image: linear-gradient(to left, rgba(165, 55, 253, 0.0), rgba(165, 55, 253, 0.9));
+    border-bottom-left-radius: 50px;
+    height: 20vh;
+    position: relative;
+    top: 438px;
+    display: none;
 }
 
 .panel.active{
     flex: 5;
 }
 .panel.active .text-wrapper{
+    display: block;
+}
+.panel.active .gradient{
     display: block;
 }
 .panel.active h3{
