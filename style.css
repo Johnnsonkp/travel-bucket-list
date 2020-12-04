@@ -79,6 +79,10 @@ header{
     left: 20px;
     margin: 0;
     display: none;
+    background-image: linear-gradient(to right, rgba(165, 55, 253, 0.0), rgba(165, 55, 253, 0.9));
+    height: 20vh;
+    width: 80%;
+    margin-bottom: -10px;
 }
 
 .panel.active{
