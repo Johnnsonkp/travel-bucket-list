@@ -61,6 +61,7 @@ header{
     color: #fff;
     border: solid 2px #fff;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .panel h3{
